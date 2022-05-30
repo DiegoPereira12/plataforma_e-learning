@@ -7,7 +7,7 @@ visando atender os requisitos da stack da Keeps.
 ## O Desafio
 
 O candidato deverá criar uma aplicação Server-Side que irá permitir gerir uma 'mini' solução de e-learning, 
-queterá cursos, alunos e matrículas. Essa aplicação deverá ter as APIs expostas para que uma aplicação WEB
+que terá cursos, alunos e matrículas. Essa aplicação deverá ter as APIs expostas para que uma aplicação WEB
 possa consumir os recursos.
 
 O teste está dividido em fases de dificuldades. Não são obrigatórias todas as etapas e nem precisam ser executadas 
