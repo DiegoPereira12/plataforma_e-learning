@@ -1,4 +1,4 @@
-# Desafio Desenvolvimento Keeps
+# Plataforma de Educação Online
 
 Esse desafio tem como objetivo avaliar as habilidades necessárias de um desenvolvedor back-end, 
 visando atender os requisitos da stack da Keeps.
