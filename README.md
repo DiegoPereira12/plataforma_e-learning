@@ -2,7 +2,7 @@
 
 ## O Desafio
 
-O candidato deverá criar uma aplicação Server-Side que irá permitir gerir uma 'mini' solução de e-learning, 
+Criar uma aplicação Server-Side que irá permitir gerir uma 'mini' solução de e-learning, 
 que terá cursos, alunos e matrículas. Essa aplicação deverá ter as APIs expostas para que uma aplicação WEB
 possa consumir os recursos.
 
