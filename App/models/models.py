@@ -1,8 +1,6 @@
-import imp
-from tokenize import String
 from flask_sqlalchemy import SQLAlchemy
-from sqlalchemy import Column
 from app import db
+from flask_migrate import Migrate
 
 class CourseModel(db.Model):
     __tablename__ = 'course'
@@ -10,18 +8,19 @@ class CourseModel(db.Model):
     id = db.Column(db.Integer, primary_key = True)
     name = db.Column(db.String(100))
     description = db.Column(db.String(100))
-    holder_image =  db.Column(db.String(100))
-    duration = db.Column(db.String(100))
+    holder_image = db.Column(db.String(100))
+    duration = db.Column(db.String(80))
     date_created = db.Column(db.String(100))
     date_updated = db.Column(db.String(100))
 
-    def __init__(self, name, description, holder_image, duration, date_created, date_update):
-        self.name = name
+    def __init__(self, name, description, holder_image, duration, date_created, date_updated):
+        self.name = name        
         self.description = description
         self.holder_image = holder_image
         self.duration = duration
-        self.date_created = date_created
-        self.date_update = date_update
+        self.date_created = date_created   
+        self.date_updated = date_updated
+
 
 class StudentModel(db.Model):
     __tablename__ = 'student'
@@ -29,11 +28,10 @@ class StudentModel(db.Model):
     id = db.Column(db.Integer, primary_key = True)
     name = db.Column(db.String(100))
     nickname = db.Column(db.String(100))
-    phone = db.Column(db.Intenger(50))
+    phone = db.Column(db.Integer())
     avatar = db.Column(db.String(100))
     date_created = db.Column(db.String(100))
     date_updated = db.Column(db.String(100))
-
 
     def __init__(self, name, nickname, phone, avatar, date_created, date_update):
         self.name = name
@@ -42,6 +40,7 @@ class StudentModel(db.Model):
         self.avatar = avatar
         self.date_created = date_created
         self.date_update = date_update
+
 
 class EnrollmentModel(db.Model):
     __tablename__ = 'enrollment'
@@ -61,3 +60,13 @@ class EnrollmentModel(db.Model):
         self.date_close = date_close
         self.score = score
         self.status = status
+
+
+
+
+
+
+
+
+
+
