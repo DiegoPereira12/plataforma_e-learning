@@ -10,5 +10,7 @@ app.config['SECRET_KEY'] = "random string"
 db = SQLAlchemy(app)
 migrate = Migrate(app, db)
 
+from routes.routes_course import *
+
 if __name__ == '__main__':
    app.run(debug=True) 
