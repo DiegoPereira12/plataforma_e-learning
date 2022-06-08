@@ -1,3 +1,4 @@
+from operator import methodcaller
 from flask import request, flash, url_for, redirect, render_template
 from app import app, db
 from models.models import *
@@ -31,4 +32,29 @@ def cadastro_course():
             flash('Registration successful')
 
             return redirect(url_for('lista_course'))
-    return render_template('cadastro_course.html')    
+    return render_template('cadastro_course.html')
+
+@app.route('update_course/<id>', methods=['GET', 'POST'])
+def update_course(id): 
+
+    course = CourseModel.query.filter_by(id=id).first()
+
+    if request.method == 'GET':
+        return render_template('update_course.html', course=course)
+
+    if request.method == 'POST':
+        course.name = request.form["name"]
+        course.description = request.form["description"]
+        course.holder_image = request.form["holder_image"]
+        course.duration = request.form["duration"]
+        course.date_created = request.form["date_created"]
+        course.date_updated = request.form["date_updated"]
+
+        db.session.add(course)
+        db.session.Commit()
+        flash('Registration successfully updated')
+
+        return redirect(url_for('lista_course'))
+
+
+
