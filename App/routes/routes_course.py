@@ -1,4 +1,3 @@
-from operator import methodcaller
 from flask import request, flash, url_for, redirect, render_template
 from app import app, db
 from models.models import *
@@ -55,6 +54,20 @@ def update_course(id):
         flash('Registration successfully updated')
 
         return redirect(url_for('lista_course'))
+
+@app.route('delete_course/<id>', methods=['GET', 'POST'])
+def delete_course(id):
+
+    course = CourseModel.query.filter_by(id=id).firts()
+    if request.method == 'GET':
+        return render_template('delete_course.html', course=course)
+
+    if request.method == 'POST':
+        db.session.delete(course)
+        db.session.commit()
+        flash('Registration successfully deleted')
+
+        return redirect(url_for(lista_course))
 
 
 
