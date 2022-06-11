@@ -12,7 +12,7 @@ def menu_course():
 
     return render_template('menu_course.html')
 
-@app.route('lista_course')
+@app.route('/lista_course')
 def lista_course():
 
     return render_template('/lista_course.html', course = CourseModel.query.all())
@@ -33,7 +33,7 @@ def cadastro_course():
             return redirect(url_for('lista_course'))
     return render_template('cadastro_course.html')
 
-@app.route('update_course/<id>', methods=['GET', 'POST'])
+@app.route('/update_course/<id>', methods=['GET', 'POST'])
 def update_course(id): 
 
     course = CourseModel.query.filter_by(id=id).first()
@@ -55,7 +55,7 @@ def update_course(id):
 
         return redirect(url_for('lista_course'))
 
-@app.route('delete_course/<id>', methods=['GET', 'POST'])
+@app.route('/delete_course/<id>', methods=['GET', 'POST'])
 def delete_course(id):
 
     course = CourseModel.query.filter_by(id=id).firts()
