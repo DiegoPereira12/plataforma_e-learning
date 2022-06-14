@@ -1,0 +1,19 @@
+body{
+    margin: 0;
+    font-family:  sans-serif;  
+}
+h1{
+    background-color: #434f66;
+    color: ghostwhite;
+    margin:0;
+    padding-top: 20px;  
+    padding-left: 80px;
+}
+header p {
+    background-color: #434f66;
+    margin-top: 0px;
+    color: #ff867a;
+    padding-left: 80px;
+    padding-bottom: 5px;
+    font-variant: small-caps;
+}
