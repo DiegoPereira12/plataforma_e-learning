@@ -1,19 +1,33 @@
 body{
-    margin: 0;
+    margin: 0px;
     font-family:  sans-serif;  
+    max-width: 100%;    
+    margin: auto;    
 }
 h1{
     background-color: #434f66;
     color: ghostwhite;
     margin:0;
     padding-top: 20px;  
-    padding-left: 80px;
+    text-align: center;   
+    font-variant: small-caps; 
 }
 header p {
     background-color: #434f66;
     margin-top: 0px;
-    color: #ff867a;
-    padding-left: 80px;
+    margin-bottom: 0px;
+    color: #e6796f;
     padding-bottom: 5px;
     font-variant: small-caps;
+    text-align: center;
 }
+h2{
+    background-color: #e6796f;
+    color: ghostwhite;
+    margin-top: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    font-variant: small-caps;
+}
+
