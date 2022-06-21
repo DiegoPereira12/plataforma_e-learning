@@ -16,25 +16,32 @@
         </h2>
         <form action="" method="post">
             <fieldset>
-                <label for="name">Nome</label><br>
-                <input type="text" name="name" placeholder="Nome" /><br><br>
+                <div id="form_name">
+                    <label for="name">Nome</label><br>
+                    <input type="text" name="name" placeholder="Nome" required/><br><br>
+                </div>
+                <div id="form_description">
+                    <label for="description">Descrição</label><br>
+                    <input type="text" name="description" placeholder="Descrição" /><br><br>
+                </div>
+                <div id="form_holder_image">    
+                    <label for="holder_image">Foto</label><br>
+                    <input type="text" name="holder_image" placeholder="Foto" /><br><br>
+                </div>
+                <div id="form_duration">    
+                    <label for="duration">Duração</label><br>
+                    <input type="text" name="duration" placeholder="Duração" /><br><br>
+                </div>
+                <div id="form_date_created">    
+                    <label for="date_created">Data da criação</label><br>
+                    <input type="text" name="date_created" placeholder="Data da criação"><br><br>
+                </div>
+                <div id="form_date_updated">    
+                    <label for="date_updated">Data da atualização</label><br>
+                    <input type="text" name="date_updated" placeholder="Data da atualização"><br><br>
+                </div>
 
-                <label for="description">Descrição</label><br>
-                <input type="text" name="description" placeholder="Descrição" /><br><br>
-
-                <label for="holder_image">Foto</label><br>
-                <input type="text" name="holder_image" placeholder="foto" /><br><br>
-
-                <label for="duration">Duração</label><br>
-                <input type="text" name="duration" placeholder="Duração" /><br><br>
-
-                <label for="date_created">Data da criação</label><br>
-                <input type="text" name="date_created" placeholder="Data da criação"><br><br>
-
-                <label for="date_updated">Data da atualização</label><br>
-                <input type="text" name="date_updated" placeholder="Data da criação"><br><br>
-
-                <input type="submit" value="Cadastrar" /><br>
+                <input class="buttom" type="submit" value="Cadastrar" /><br>
             </fieldset>
 
     </main>
