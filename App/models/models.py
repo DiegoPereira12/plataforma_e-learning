@@ -8,7 +8,6 @@ class CourseModel(db.Model):
     id = db.Column(db.Integer, primary_key = True)
     name = db.Column(db.String(100))
     description = db.Column(db.String(100))
-    holder_image = db.Column(db.String(100))
     duration = db.Column(db.String(80))
     date_created = db.Column(db.String(100))
     date_updated = db.Column(db.String(100))
