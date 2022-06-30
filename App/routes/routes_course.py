@@ -21,10 +21,10 @@ def lista_course():
 def cadastro_course():
 
     if request.method == 'POST':
-        if not request.form['name'] or not request.form['description'] or not request.form['holder_image'] or not request.form['duration'] or not request.form['date_created'] or not request.form['date_updated']:
+        if not request.form['name'] or not request.form['description'] or not request.form['duration'] or not request.form['date_created'] or not request.form['date_updated']:
             flash('Please, fill in all fields')
         else:
-            course = CourseModel(request.form['name'], request.form['description'], request.form['holder_image'], request.form['duration'], request.form['date_created'], request.form['date_updated'])
+            course = CourseModel(request.form['name'], request.form['description'], request.form['duration'], request.form['date_created'], request.form['date_updated'])
 
             db.session.add(course)
             db.session.commit()
@@ -44,7 +44,6 @@ def update_course(id):
     if request.method == 'POST':
         course.name = request.form["name"]
         course.description = request.form["description"]
-        course.holder_image = request.form["holder_image"]
         course.duration = request.form["duration"]
         course.date_created = request.form["date_created"]
         course.date_updated = request.form["date_updated"]

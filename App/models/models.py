@@ -15,7 +15,6 @@ class CourseModel(db.Model):
     def __init__(self, name, description, holder_image, duration, date_created, date_updated):
         self.name = name        
         self.description = description
-        self.holder_image = holder_image
         self.duration = duration
         self.date_created = date_created   
         self.date_updated = date_updated
