@@ -79,9 +79,11 @@ input{
 }
 #table{
     margin-top: 50px;
-    
 }
-table{
-    border: 1px;
-    
+
+
+th{
+    border-style:double;
+    border-color: #e6796f; 
+    color: #434f66;
 }
