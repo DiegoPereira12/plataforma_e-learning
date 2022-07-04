@@ -15,7 +15,7 @@
     </header>
     <main>
         <section id="table">
-            <table>
+            <table align="center">
                 <thead>
                     <tr>
                         <th>Nome</th>
@@ -25,6 +25,17 @@
                         <th>Data atualização</th>
                     </tr>
                 </thead>
+                <tbody>
+                    {% for course in course %}
+                        <tr>
+                            <td>{{ course.name }}</td>
+                            <td>{{ course.description }}</td>
+                            <td>{{ course.duration }}</td>
+                            <td>{{ course.date_created }}</td>
+                            <td>{{ course.date_updated }}</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
             </table>
         </section>
     </main>

@@ -1,7 +1,10 @@
 *{
-    margin: 0;
-    padding: 0;
+    margin-top: 0px;
     font-family: sans-serif;  
+}
+body   {
+    margin-left: 0px;
+    margin-right: 0px;
 }
 h1{
     background-color: #434f66;
@@ -9,6 +12,7 @@ h1{
     padding-top: 20px;  
     text-align: center;   
     font-variant: small-caps; 
+    margin-bottom: 0px;
 }
 header p {
     background-color: #434f66;
@@ -79,11 +83,15 @@ input{
 }
 #table{
     margin-top: 50px;
+    
 }
-
-
-th{
-    border-style:double;
+th, td{
+    border: 1px solid;
     border-color: #e6796f; 
     color: #434f66;
+    padding: 2px 2px 2px 2px;
+    text-align: center;
+}
+table{
+    width: 30%;
 }
