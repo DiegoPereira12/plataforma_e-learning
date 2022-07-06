@@ -8,13 +8,13 @@ possa consumir os recursos.
 
 A modelagem do projeto terá os seguintes modelos.
 
-- Course (name, description, holder_image, duration, date_created, date_updated)
-- Student (name, nickname, phone, avatar, date_created, date_updated)
-- Enrollment (student, course, date_enroll, date_close, score, status) / * Status = (Aprovado, Reprovado, Andamento)
+- Course (name, description, holder_image, duration, date_created, date_updated) :heavy_check_mark:
+- Student (name, nickname, phone, avatar, date_created, date_updated) :heavy_check_mark:
+- Enrollment (student, course, date_enroll, date_close, score, status) / * Status = (Aprovado, Reprovado, Andamento) :heavy_check_mark:
   
 A API deverá fornecer recursos para:
-- Listar todos os cursos do catalogo
-- Cadastrar e atualizar novos cursos
+- Listar todos os cursos do catalogo :hammer_and_wrench:
+- Cadastrar e atualizar novos cursos :hammer_and_wrench:
 - Excluir cursos existentes
 - Listar todos os alunos
 - Cadastrar/Editar novos alunos
