@@ -12,7 +12,7 @@ class CourseModel(db.Model):
     date_created = db.Column(db.String(100))
     date_updated = db.Column(db.String(100))
 
-    def __init__(self, name, description, holder_image, duration, date_created, date_updated):
+    def __init__(self, name, description, duration, date_created, date_updated):
         self.name = name        
         self.description = description
         self.duration = duration
