@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+    <title>Atualizar Curso</title>
+</head>
+<body>
+    <header>
+        <h1>SCHOOL SANDIEGO</h1>
+        <p>cursos acadêmicos</p>
+        <h2>Atualizar Curso</h2>
+    </header>
+    <main>
+        <fieldset>
+            <div>
+                <input type="hidden" name="id_course" value="{{course.id}}">
+            </div>
+            <div>
+                <label for="name">Nome</label><br>
+                <input type="text" name="name" placeholder="Nome" value="{{course.name}}" /><br>
+            </div>
+            <div>
+                <label for="description">Descrição</label><br>
+                <input type="text" name="description" placeholder="Descrição" value="{{course.description}}"><br>
+            </div>
+            <div>
+                <label for="duration">Duração</label>
+                <input type="text" name="duration" placeholder="Duração" value="{{course.duration}}"><br>
+            </div>
+            <div>
+                <label for="date_created">Data criação</label>
+                <input type="datetime-local" placeholder="Data criação" value="{{course.date_created}}"><br>
+            </div>
+            <div>
+                <label for="date_updated">Data atualização</label>
+                <input type="datetime-local" placeholder="Data atualização" value="{{course.date_updated}}"><br>
+            </div>
+        </fieldset>
+    </main>
+</body>
+</html>
