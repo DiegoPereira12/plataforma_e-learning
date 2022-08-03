@@ -33,6 +33,7 @@
                             <td>{{ course.duration }}</td>
                             <td>{{ course.date_created }}</td>
                             <td>{{ course.date_updated }}</td>
+                            <th><a href = "{{ url_for('update_course', id=course.id) }}"> Atualizar</a></th>
                         </tr>
                     {% endfor %}
                 </tbody>
