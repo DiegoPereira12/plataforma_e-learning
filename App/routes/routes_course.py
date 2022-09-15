@@ -34,7 +34,7 @@ def cadastro_course():
     return render_template('cadastro_course.html')
 
 @app.route('/update_course/<id>', methods=['GET', 'POST'])
-def update_course(id): 
+def update_course(id):
 
     course = CourseModel.query.filter_by(id=id).first()
 
@@ -49,8 +49,7 @@ def update_course(id):
         course.date_updated = request.form["date_updated"]
 
         db.session.add(course)
-        db.session.Commit()
-        flash('Registration successfully updated')
+        db.session.commit()
 
         return redirect(url_for('lista_course'))
 

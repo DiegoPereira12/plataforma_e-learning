@@ -14,33 +14,33 @@
         <h2>Atualizar Curso</h2>
     </header>
     <main>
-        <form>
+        <form action="" method="post">
             <fieldset>
                 <div>
                     <input type="hidden" name="id_course" value="{{course.id}}" />
                 </div>
-                <div class="form_name">
+                <div class="form_name">   
                     <label for="name">Nome</label><br>
                     <input type="text" name="name" placeholder="Nome" value="{{course.name}}" /><br><br>
                 </div>
                 <div class="form_description">
                     <label for="description">Descrição</label><br>
-                    <input type="text" name="description" placeholder="Descrição" value="{{course.description}}"><br><br>
+                    <input type="text" name="description" placeholder="Descrição" value="{{course.description}}" /><br><br>
                 </div>
-                <div class="form_duration">
+                <div class="form_duration">   
                     <label for="duration">Duração</label><br>
-                    <input type="text" name="duration" placeholder="Duração" value="{{course.duration}}"><br><br>
+                    <input type="text" name="duration" placeholder="Duração" value="{{course.duration}}" /><br><br>
                 </div>
-                <div class="form_date_created">
+                <div class="form_date_created">    
                     <label for="date_created">Data criação</label><br>
-                    <input type="datetime-local" placeholder="Data criação" value="{{course.date_created}}"><br><br>
+                    <input type="datetime-local" name="date_created" placeholder="Data criação" value="{{course.date_created}}" /><br><br>
                 </div>
-                <div class="form_date_updated">
+                <div class="form_date_updated">       
                     <label for="date_updated">Data atualização</label><br>
-                    <input type="datetime-local" placeholder="Data atualização" value="{{course.date_updated}}"><br><br><br>
-                </div>
+                    <input type="datetime-local" name="date_updated" placeholder="Data atualização" value="{{course.date_updated}}" /><br><br><br>
+                </div>    
                 <input class="buttom" type="submit" value="Atualizar" /><br><br>
-                <a href="{{ url_for('menu_course') }}"> << </a>
+                <a href="{{ url_for('menu_course') }}"> Voltar </a>
             </fieldset>
         </form>
     </main>
