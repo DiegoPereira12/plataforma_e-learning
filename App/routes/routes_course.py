@@ -56,7 +56,7 @@ def update_course(id):
 @app.route('/delete_course/<id>', methods=['GET', 'POST'])
 def delete_course(id):
 
-    course = CourseModel.query.filter_by(id=id).firts()
+    course = CourseModel.query.filter_by(id=id).first()
     if request.method == 'GET':
         return render_template('delete_course.html', course=course)
 
@@ -65,7 +65,7 @@ def delete_course(id):
         db.session.commit()
         flash('Registration successfully deleted')
 
-        return redirect(url_for(lista_course))
+        return redirect(url_for('lista_course'))
 
 
 

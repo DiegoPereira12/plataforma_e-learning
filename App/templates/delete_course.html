@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+    <title>Excluir Curso</title>
+</head>
+<body>
+    <header>
+        <h1>SCHOOL SANDIEGO</h1>
+        <p>curso acadêmicos</p>
+        <h2>Excluir Curso</h2>
+    </header>
+    <main>
+        <form action="" method="post">
+            <fieldset>
+                <b>Id:</b> {{course.id}} <br>
+                <b>Nome:</b> {{course.name}} <br>
+                <b>Descrição:</b> {{course.description}} <br>
+                <b>Duração:</b> {{course.duration}} <br>
+                <b>Data criação:</b> {{course.date_created}} <br>
+                <b>Data atualização:</b> {{ course.date_updated}} <br><br>
+                <input class="buttom" type="submit" value="Excluir" /> <br><br>
+                <a class="botao_acao" href="{{ url_for('menu_course') }}"> Voltar </a>
+            </fieldset>    
+        </form>
+    </main>
+</body>
+</html>
