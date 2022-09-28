@@ -13,11 +13,11 @@ A modelagem do projeto terá os seguintes modelos.
 - Enrollment (student, course, date_enroll, date_close, score, status) / * Status = (Aprovado, Reprovado, Andamento) :heavy_check_mark:
   
 A API deverá fornecer recursos para:
-- Listar todos os cursos do catalogo :hammer_and_wrench:
-- Cadastrar e atualizar novos cursos :hammer_and_wrench:
-- Excluir cursos existentes
-- Listar todos os alunos
-- Cadastrar/Editar novos alunos
+- Listar todos os cursos do catalogo :heavy_check_mark:
+- Cadastrar e atualizar novos cursos :heavy_check_mark:
+- Excluir cursos existentes :heavy_check_mark:
+- Listar todos os alunos :hammer_and_wrench:
+- Cadastrar/Editar novos alunos :hammer_and_wrench:
 - Matricular um aluno em um curso
 - Remover o aluno de um curso
 
