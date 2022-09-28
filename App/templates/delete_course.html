@@ -14,33 +14,19 @@
         <h2>Excluir Curso</h2>
     </header>
     <main>
-        <section class="table">
-            <table align="center" class="table">
-                <thead>
-                    <tr>
-                        <th>Id</th> 
-                        <th>Nome</th> 
-                        <th>Descrição</th> 
-                        <th>Duração</th> 
-                        <th>Data criação</th> 
-                        <th>Data atualização</th> 
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>{{course.id}}</td>
-                        <td>{{course.name}}</td>
-                        <td>{{course.description}}</td> 
-                        <td>{{course.duration}}</td>
-                        <td>{{course.date_created}}</td>
-                        <td>{{ course.date_updated}}</td>
-                    </tr>
-                </tbody>
-            <table><br><br>
-        </section>
-        <section align="center">
-            <input class="buttom" type="submit" value="Excluir" /><br><br>
-            <a class="buttom" href="{{ url_for('menu_course') }}"> << </a>
+        <section>
+            <form action="" method="post">
+                <fieldset>
+                    <b>Id:</b>{{course.id}}<br><br>
+                    <b>Nome:</b>{{course.name}}<br><br>
+                    <b>Descrição:</b>{{course.description}}<br><br>
+                    <b>Duração:</b>{{course.duration}}<br><br>
+                    <b>Data criação:</b>{{course.date_created}}<br><br>
+                    <b>Data atualização:</b>{{course.date_updated}}<br><br><br>
+                    <input class="buttom" type="submit" value="Excluir" /><br><br>
+                    <a href="{{ url_for('menu_course') }}"> << </a>
+                </fieldset>
+            </form>
         </section>
     </main>
 </body>
