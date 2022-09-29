@@ -17,12 +17,18 @@
         <section>
             <form action="" method="post">
                 <fieldset>
-                    <b>Id:</b>{{course.id}}<br><br>
-                    <b>Nome:</b>{{course.name}}<br><br>
-                    <b>Descrição:</b>{{course.description}}<br><br>
-                    <b>Duração:</b>{{course.duration}}<br><br>
-                    <b>Data criação:</b>{{course.date_created}}<br><br>
-                    <b>Data atualização:</b>{{course.date_updated}}<br><br><br>
+                    <b>Id</b><br>
+                    {{course.id}}<br><br>
+                    <b>Nome</b><br>
+                    {{course.name}}<br><br>
+                    <b>Descrição</b><br>
+                    {{course.description}}<br><br>
+                    <b>Duração</b><br>
+                    {{course.duration}}<br><br>
+                    <b>Data criação</b>
+                    <br>{{course.date_created}}<br><br>
+                    <b>Data atualização</b>
+                    <br>{{course.date_updated}}<br><br><br>
                     <input class="buttom" type="submit" value="Excluir" /><br><br>
                     <a href="{{ url_for('menu_course') }}"> << </a>
                 </fieldset>
