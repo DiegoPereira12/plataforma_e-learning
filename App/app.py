@@ -11,6 +11,7 @@ db = SQLAlchemy(app)
 migrate = Migrate(app, db)
 
 from routes.routes_course import *
+from routes.routes_student import *
 
 if __name__ == '__main__':
    app.run(debug=True) 

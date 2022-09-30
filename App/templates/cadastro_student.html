@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+    <title>Cadastro Student</title>
+</head>
+<body>
+    <header>
+        <h1>SCHOOL SANDIEGO</h1>
+        <p>cursos acadêmicos</p>
+        <h2>Cadastro Estudantes</h2>
+    </header>
+    <main>
+        <form action="" method="post">
+            <fieldset>
+                <div>
+                    <label for="avatar">Avatar</label><br>
+                    <input type="image" name="avatar" placeholder="Avatar">
+                </div>
+                <div class="form_name">
+                    <label for="name">Nome</label><br>
+                    <input type="text" name="name" placeholder="Nome" required><br><br>
+                </div>
+                <div>
+                    <label for="nickname">Nickname</label><br>
+                    <input type="text" name="nickname" placeholder="Nickname"><br><br>
+                </div>
+                <div>
+                    <label for="phone">Phone</label><br>
+                    <input type="tel" name="phone" placeholder="Phone"><br><br>
+                </div>
+                <div class="form_date_created">    
+                    <label for="date_created">Data criação</label><br>
+                    <input type="datetime-local" name="date_created" placeholder="Data criação"><br><br>
+                </div>
+                <div class="form_date_updated">    
+                    <label for="date_updated">Data atualização</label><br>
+                    <input type="datetime-local" name="date_updated" placeholder="Data atualização"><br><br><br>
+                </div>
+                <input class="buttom" type="submit" value="Cadastrar" /><br><br>
+                <a href="{{ url_for('menu_student') }}"> << </a>
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>
+
+
+

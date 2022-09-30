@@ -24,18 +24,18 @@ class StudentModel(db.Model):
     __tablename__ = 'student'
 
     id = db.Column(db.Integer, primary_key = True)
+    avatar = db.Column(db.String(100))
     name = db.Column(db.String(100))
     nickname = db.Column(db.String(100))
     phone = db.Column(db.Integer())
-    avatar = db.Column(db.String(100))
     date_created = db.Column(db.String(100))
     date_updated = db.Column(db.String(100))
 
-    def __init__(self, name, nickname, phone, avatar, date_created, date_update):
+    def __init__(self, avatar, name, nickname, phone, date_created, date_update):
+        self.avatar = avatar
         self.name = name
         self.nickname = nickname
         self.phone = phone
-        self.avatar = avatar
         self.date_created = date_created
         self.date_update = date_update
 
