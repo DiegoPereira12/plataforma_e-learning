@@ -62,7 +62,7 @@ input:hover{
     background-color: #e48b82;
 }
 .form_name label{
-    padding-right: 8em;    
+    padding-right: 8.2em;    
 }
 .form_description label{
     padding-right: 6.2em ;
@@ -78,6 +78,12 @@ input:hover{
 }
 .form_date_updated label{
     padding-right: 2.2em;
+}
+.form_nickname label{
+    padding-right: 6.3em;
+}
+.form_phone label{
+    padding-right: 7.9em;
 }
 .buttom{
     margin-top: 5px;
