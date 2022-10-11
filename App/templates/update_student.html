@@ -8,6 +8,38 @@
     <title>Atualizar Estudantes</title>
 </head>
 <body>
-    
+    <header>
+        <h1>SCHOOL SANDIEGO</h1>
+        <p>cursos acadêmicos</p>
+        <h2>Atualizar Estudantes</h2>
+    </header>
+    <main>
+        <form action="" method="post">
+            <fieldset>
+                <div class="form_name">
+                    <label for="name">Nome</label><br>
+                    <input type="text" name="name" placeholder="Nome" value="{{student.name}}" required><br><br>
+                </div>
+                <div class="form_nickname">
+                    <label for="nickname">Nickname</label><br>
+                    <input type="text" name="nickname" placeholder="Nickname" value="{{student.nickname}}"><br><br>
+                </div>
+                <div class="form_phone">
+                    <label for="phone">Phone</label><br>
+                    <input type="tel" name="phone" placeholder="Phone" value="{{student.phone}}"><br><br>
+                </div>
+                <div class="form_date_created">    
+                    <label for="date_created">Data criação</label><br>
+                    <input type="datetime-local" name="date_created" placeholder="Data criação" value="{{student.date_created}}"><br><br>
+                </div>
+                <div class="form_date_updated">    
+                    <label for="date_updated">Data atualização</label><br>
+                    <input type="datetime-local" name="date_updated" placeholder="Data atualização" value="{{student.date_updated}}"><br><br><br>
+                </div>
+                <input class="buttom" type="submit" value="Atualizar" /><br><br>
+                <a href="{{ url_for('menu_student') }}"> << </a>
+            </fieldset>
+        </form>
+    </main>
 </body>
 </html>

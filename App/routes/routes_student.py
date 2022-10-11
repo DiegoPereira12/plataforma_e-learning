@@ -17,10 +17,10 @@ def lista_student():
 def cadastro_student():
 
     if request.method == 'POST':
-        if not request.form['name'] or not request.form['nickname'] or not request.form['phone'] or not request.form['date_created'] or not request.form['date_created']:
+        if not request.form['name'] or not request.form['nickname'] or not request.form['phone'] or not request.form['date_created'] or not request.form['date_updated']:
             flash('Please, fill in all fields')
         else:
-            student = StudentModel(request.form['name'], request.form['nickname'], request.form['phone'], request.form['date_created'], request.form['date_created'])
+            student = StudentModel(request.form['name'], request.form['nickname'], request.form['phone'], request.form['date_created'], request.form['date_updated'])
 
             db.session.add(student)
             db.session.commit()

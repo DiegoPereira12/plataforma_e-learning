@@ -30,12 +30,12 @@ class StudentModel(db.Model):
     date_created = db.Column(db.String(100))
     date_updated = db.Column(db.String(100))
 
-    def __init__(self, name, nickname, phone, date_created, date_update):
+    def __init__(self, name, nickname, phone, date_created, date_updated):
         self.name = name
         self.nickname = nickname
         self.phone = phone
-        self.date_created = date_created
-        self.date_update = date_update
+        self.date_created = date_created   
+        self.date_updated = date_updated
 
 
 class EnrollmentModel(db.Model):
