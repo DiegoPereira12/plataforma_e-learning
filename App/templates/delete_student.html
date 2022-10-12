@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+    <title>Excluir Estudantes</title>
+</head>
+<body>
+    <header>
+        <h1>SCHOOL SANDIEGO</h1>
+        <p>curso acadêmicos</p>
+        <h2>Excluir Estudantes</h2>
+    </header>
+    <main>
+        <section>
+            <form action="" method="post">
+                <fieldset>
+                    <b>Id</b><br>
+                    {{student.id}}<br><br>
+                    <b>Nome</b><br>
+                    {{student.name}}<br><br>
+                    <b>Nickname</b><br>
+                    {{student.nickname}}<br><br>
+                    <b>Phone</b><br>
+                    {{student.phone}}<br><br>
+                    <b>Data criação</b>
+                    <br>{{student.date_created}}<br><br>
+                    <b>Data atualização</b>
+                    <br>{{student.date_updated}}<br><br><br>
+                    <input class="buttom" type="submit" value="Excluir" /><br><br>
+                    <a href="{{ url_for('menu_student') }}"> << </a>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

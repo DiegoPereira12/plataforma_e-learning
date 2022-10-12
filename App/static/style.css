@@ -41,6 +41,10 @@ a:hover{
     background-color: #e48b82;
     padding: 3px 3px 3px 3px;
 }
+h3{
+    text-align: center;
+    background-color: #434f66;
+}
 form{
     text-align: center;
     color: ghostwhite;
