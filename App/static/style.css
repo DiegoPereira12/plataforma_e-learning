@@ -5,6 +5,7 @@
 body   {
     margin-left: 0px;
     margin-right: 0px;
+    
 }
 h1{
     background-color: #434f66;
@@ -27,6 +28,7 @@ h2{
     background-color: #e6796f;
     color: ghostwhite;
     margin-top: 0px;
+    margin-bottom: 0px;
     padding-top: 5px;
     padding-bottom: 5px;
     text-align: center;
@@ -43,7 +45,11 @@ a:hover{
 }
 h3{
     text-align: center;
-    background-color: #434f66;
+    color: ghostwhite;
+    font-variant: small-caps;
+    
+    padding: 10px 0px 10px 0px ;   
+    background-image: url('../img/escola.jpg'); 
 }
 form{
     text-align: center;
