@@ -16,10 +16,10 @@ A API deverá fornecer recursos para:
 - Listar todos os cursos do catalogo :heavy_check_mark:
 - Cadastrar e atualizar novos cursos :heavy_check_mark:
 - Excluir cursos existentes :heavy_check_mark:
-- Listar todos os alunos :hammer_and_wrench:
-- Cadastrar/Editar novos alunos :hammer_and_wrench:
-- Matricular um aluno em um curso
-- Remover o aluno de um curso
+- Listar todos os alunos :heavy_check_mark:
+- Cadastrar/Editar novos alunos :heavy_check_mark:
+- Matricular um aluno em um curso :hammer_and_wrench:
+- Remover o aluno de um curso :hammer_and_wrench:
 
 Regras de négocios a ser implementadas:
 - Um usuário pode desistir de um curso e informar uma justificativa
